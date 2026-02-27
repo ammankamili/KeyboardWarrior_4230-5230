@@ -3,7 +3,9 @@ spawn_timer++;
 
 if (spawn_timer >= spawn_interval) {
     spawn_timer = 0;
-    instance_create_layer(0, 0, "Instances", obj_hexbugEnemy);
+    enemy = instance_create_layer(0, 0, "Instances", obj_hexbugEnemy);
+	var r_num = irandom(array_length(word_array) - 1);
+	enemy.word = word_array[r_num];
 }
 
 // select lowest bug as target

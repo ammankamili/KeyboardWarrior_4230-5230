@@ -5,6 +5,7 @@ draw_set_color(c_white);
 draw_text(x, y - 32, word);
 
 // typed progress 
+
 var typed = string_copy(word, 1, progress);
 draw_set_color(c_aqua);
 draw_text(x, y - 32, typed);

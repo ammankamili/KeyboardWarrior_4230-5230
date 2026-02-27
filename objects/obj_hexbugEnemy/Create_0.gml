@@ -6,9 +6,10 @@ y = -sprite_get_height(sprite_index) - 16;
 progress = 0;
 base_speed = 1.5;
 damageDone = 1;
+word = "";
 
 // Always give a word so drawing/typing doesn't crash
-word = choose("hex", "bug", "type", "key");
+//word = choose("hex", "bug", "type", "key");
 
 /*
 // JSON LOAD (disabled until words.json exists)
